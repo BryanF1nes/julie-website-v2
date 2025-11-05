@@ -1,5 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap');
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		interpolate-size: allow-keywords;
+	}
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+p {
+	text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+:root {
+	--primary-white: #F1f1f1;
+	--primary-purple: #494165;
+	--primary-pink: #B68B87;
+	--primary-green: #72DA79;
+	--secondary-purple: #6e5d9e;
+	--secondary-purple-hover: #AE95F5;
+	--secondary--green: #2FC781;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Unkempt', sans-serif;
 }
+
+/* Back splash */
+.backsplash {
+	background: url('./assets/watercolour.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	z-index: -1;
+	padding-bottom: 250px;
+}
+
+/* Images */
+#images {
+	height: auto;
+	width: 300px;
+}
+
+/* Header */
+header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	text-decoration: none;
+	text-align: left;
+	position: absolute;
+	line-height: 1.3;
+	left: 20%;
+	top: 5%;
+	color: var(--secondary-purple);
+}
+
+.container h1 {
+	font-size: 48px;
+	font-weight: bold;
+}
+
+.container p {
+	font-size: 18px;
+}
+
+.img-container {
+	width: 100%;
+	height: 400px;
+	display: block;
+}
+
+#banner {
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	object-fit: fill;
+}
+
+/* Hero */
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 50px 0px;
+	padding: 24px;
+}
+
+.bubble-container {
+	position: absolute;
+	height: 400px;
+	width: 300px;
+}
+
+/* About Me */
+.bubble:first-child {
+	position: absolute;
+	top: -50px;
+	left: -100px;
+}
+
+/* Books */
+.bubble:nth-child(2) {
+	position: absolute;
+	top: -100px;
+	right: -150px;
+}
+
+/* Contact Me */
+.bubble:nth-child(3) {
+	position: absolute;
+	bottom: 70px;
+	right: -150px;
+}
+
+/* Parents */
+.bubble:nth-child(4) {
+	position: absolute;
+	bottom: -50px;
+	left: -100px;
+}
+
+/* Events */
+.bubble:last-child {
+	position: absolute;
+	bottom: -120px;
+	right: -60px;
+}
+
+/* Author Information */
+.author-backsplash-container {
+	position: relative;
+	top: -150px;
+	width: 100%;
+	height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+#author-backsplash {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	object-fit: fill;
+}
+
+.about-author {
+	width: 100%;
+}
+
+.author-information {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	gap: 16px;
+}
+
+.author-container {
+	z-index: 100;
+	max-width: 1200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px auto;
+	padding: 24px;
+}
+
+.author-container p {
+	font-size: 18px;
+	line-height: 1.5;
+	max-width: 600px;
+}
+
+/* Book Information */
+.book-section {
+	width: 100%;
+}
+
+.book-container {
+	max-width: 1200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px auto;
+	padding: 24px;
+}
+
+.book-container p {
+	font-size: 18px;
+	line-height: 1.5;
+	max-width: 600px;
+}
+
+.book {
+	position: relative;
+}
+
+#award {
+	position: absolute;
+	height: auto;
+	width: 128px;
+	z-index: 5;
+	right: -30px;
+	bottom: -20px;
+}
+
+.book-information {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	gap: 16px;
+}
+
+.book-information h1 {
+	color: var(--secondary-purple);
+}
+
+.book-information p {
+	color: var(--secondary-purple);
+}
+
+button {
+	font-size: 18px;
+	padding: 8px 32px;
+	font-weight: bold;
+	border-radius: 24px;
+	color: white;
+	background-color: var(--secondary-purple-hover);
+	border: none;
+}
+
+/* Footer */
