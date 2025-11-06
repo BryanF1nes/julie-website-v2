@@ -81,6 +81,7 @@ h6 {
 #images {
 	height: auto;
 	width: 300px;
+	border-radius: 24px;
 }
 
 /* Header */
@@ -88,6 +89,7 @@ header {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	margin-bottom: 200px;
 }
 
 .container {
@@ -110,14 +112,14 @@ header {
 }
 
 .img-container {
+	height: 250px;
 	width: 100%;
-	display: block;
 }
 
 #banner {
 	z-index: -1;
 	width: 100%;
-	object-fit: fill;
+	object-fit: cover;
 }
 
 /* Hero */
@@ -305,7 +307,7 @@ button {
 .nav-buttons {
 	display: flex;
 	justify-content: space-between;
-	width: 20%;
+	width: 300px;
 	gap: 18px;
 	margin: 10px 0px;
 }
@@ -375,4 +377,105 @@ button {
 
 #last-ul {
 	margin-left: 48px;
+}
+
+.biblical-virtues b {
+	font-size: 24px;
+}
+
+.biblical-virtues li {
+	font-size: 18px;
+}
+
+/* Events */
+#events-section {
+	padding: 24px;
+	margin: 0px auto 64px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.events-section {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	font-size: 18px;
+	line-height: 2;
+	margin: 0px auto;
+	max-width: 800px;
+	color: var(--secondary-purple);
+}
+
+/* Contact Me */
+#contact-me-section {
+	padding: 24px;
+	margin: 0px auto 64px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-me-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+	font-size: 18px;
+	line-height: 2;
+	margin: 0px auto;
+	max-width: 800px;
+	color: var(--secondary-purple);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+	header {
+		margin-bottom: 0px;
+	}
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		top: 20px;
+		left: 200px;
+	}
+
+	#banner {
+		height: 300px;
+		object-fit: cover;
+	}
+
+	#images {
+		width: 200px;
+	}
+
+	.author-container {
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.book-container {
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.about-container {
+		max-width: 600px;
+	}
+
+	#parent-section {
+		max-width: 600px;
+	}
+
+	#contact-me {
+		margin: 100px 0px;
+	}
+
+	#events-section {
+		margin: 100px 0px;
+	}
+
 }
