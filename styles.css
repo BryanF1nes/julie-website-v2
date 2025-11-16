@@ -86,11 +86,21 @@ h6 {
 
 /* Header */
 header {
+    transition: transform 0.3s ease, opacity 0.3s ease;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 200px;
+}
+
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .container {
@@ -256,7 +266,7 @@ header {
     position: absolute;
     height: auto;
     width: 128px;
-    z-index: 5;
+    z-index: 1;
     right: -30px;
     bottom: -20px;
 }
@@ -441,6 +451,10 @@ button {
     left: 730px;
 }
 
+#spacer {
+    margin-bottom: 170px;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     header {
@@ -503,6 +517,10 @@ button {
         margin: 100px 0px;
     }
 
+    #spacer {
+        margin-bottom: 60px;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -534,6 +552,12 @@ button {
     .bubble {
         height: 100px;
         width: 100px;
+    }
+
+    .bubble:nth-child(3) {
+        position: absolute;
+        bottom: 70px;
+        right: -130px;
     }
 
     #chickens {
@@ -595,4 +619,14 @@ button {
     #events-section {
         margin: 50px 25px 50px 25px;
     }
+
+    #spacer {
+        margin-bottom: 75px;
+    }
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 5;
 }
