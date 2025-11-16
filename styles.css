@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap');
 
 @media (prefers-reduced-motion: no-preference) {
-	html {
-		interpolate-size: allow-keywords;
-	}
+    html {
+        interpolate-size: allow-keywords;
+    }
 }
 
 body {
-	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 
 img,
@@ -16,15 +16,15 @@ picture,
 video,
 canvas,
 svg {
-	display: block;
-	max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
 input,
 button,
 textarea,
 select {
-	font: inherit;
+    font: inherit;
 }
 
 p,
@@ -34,11 +34,11 @@ h3,
 h4,
 h5,
 h6 {
-	overflow-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 p {
-	text-wrap: pretty;
+    text-wrap: pretty;
 }
 
 h1,
@@ -47,461 +47,552 @@ h3,
 h4,
 h5,
 h6 {
-	text-wrap: balance;
+    text-wrap: balance;
 }
 
 :root {
-	--primary-white: #F1f1f1;
-	--primary-purple: #494165;
-	--primary-pink: #B68B87;
-	--primary-green: #72DA79;
-	--secondary-purple: #6e5d9e;
-	--secondary-purple-hover: #AE95F5;
-	--secondary--green: #2FC781;
+    --primary-white: #F1f1f1;
+    --primary-purple: #494165;
+    --primary-pink: #B68B87;
+    --primary-green: #72DA79;
+    --secondary-purple: #6e5d9e;
+    --secondary-purple-hover: #AE95F5;
+    --secondary--green: #2FC781;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Unkempt', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Unkempt', sans-serif;
 }
 
 /* Back splash */
 .backsplash {
-	background: url('./assets/watercolour.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	z-index: -1;
-	padding-bottom: 250px;
+    background: url('./assets/watercolour.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: -1;
+    padding-bottom: 250px;
 }
 
 /* Images */
 #images {
-	height: auto;
-	width: 300px;
-	border-radius: 24px;
+    height: auto;
+    width: 300px;
+    border-radius: 24px;
 }
 
 /* Header */
 header {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
 }
 
 .container {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	text-decoration: none;
-	text-align: left;
-	max-width: 1200px;
-	color: var(--secondary-purple);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: left;
+    max-width: 1200px;
+    color: var(--secondary-purple);
 }
 
 .logo-container {
-	position: absolute;
-	width: 1200px;
+    position: absolute;
+    width: 1200px;
 }
 
 .container h1 {
-	font-size: 48px;
-	font-weight: bold;
+    font-size: 48px;
+    font-weight: bold;
 }
 
 .container p {
-	font-size: 18px;
+    font-size: 18px;
 }
 
 .img-container {
-	height: 150px;
-	width: 100%;
+    height: 150px;
+    width: 100%;
 }
 
 #banner {
-	z-index: -1;
-	width: 100%;
-	object-fit: cover;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Hero */
 .hero {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 50px 0px;
-	padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    padding: 24px;
 }
 
 .bubble-container {
-	position: absolute;
-	height: 400px;
-	width: 300px;
+    position: absolute;
+    height: 400px;
+    width: 300px;
 }
 
 /* About Me */
 .bubble:first-child {
-	position: absolute;
-	top: -50px;
-	left: -100px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
 }
 
 /* Books */
 .bubble:nth-child(2) {
-	position: absolute;
-	top: -70px;
-	right: -70px;
+    position: absolute;
+    top: -70px;
+    right: -70px;
 }
 
 /* Contact Me */
 .bubble:nth-child(3) {
-	position: absolute;
-	bottom: 70px;
-	right: -150px;
+    position: absolute;
+    bottom: 70px;
+    right: -150px;
 }
 
 /* Parents */
 .bubble:nth-child(4) {
-	position: absolute;
-	bottom: -50px;
-	left: -100px;
+    position: absolute;
+    bottom: -50px;
+    left: -100px;
 }
 
 /* Events */
 .bubble:last-child {
-	position: absolute;
-	bottom: -120px;
-	right: -60px;
+    position: absolute;
+    bottom: -120px;
+    right: -60px;
 }
 
 /* Author Information */
 .author-backsplash-container {
-	position: relative;
-	top: -150px;
-	width: 100%;
-	height: 800px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
+    position: relative;
+    top: -150px;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 #author-backsplash {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	height: 100%;
-	width: 100%;
-	object-fit: fill;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
 }
 
 .about-author {
-	width: 100%;
+    width: 100%;
 }
 
 .author-information {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: start;
-	gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 16px;
 }
 
 .author-container {
-	z-index: 100;
-	max-width: 1200px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin: 0px auto;
-	padding: 24px;
+    z-index: 100;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+    padding: 24px;
 }
 
 .author-container p {
-	font-size: 18px;
-	line-height: 1.5;
-	max-width: 600px;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 600px;
 }
 
 /* Book Information */
 .book-section {
-	width: 100%;
+    width: 100%;
 }
 
 .book-container {
-	max-width: 1200px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin: 0px auto;
-	padding: 24px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+    padding: 24px;
 }
 
 .book-container p {
-	font-size: 18px;
-	line-height: 1.5;
-	max-width: 600px;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 600px;
 }
 
 .book {
-	position: relative;
+    position: relative;
 }
 
 #award {
-	position: absolute;
-	height: auto;
-	width: 128px;
-	z-index: 5;
-	right: -30px;
-	bottom: -20px;
+    position: absolute;
+    height: auto;
+    width: 128px;
+    z-index: 5;
+    right: -30px;
+    bottom: -20px;
 }
 
 .book-information {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: start;
-	gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 16px;
 }
 
 .book-information h1 {
-	color: var(--secondary-purple);
+    color: var(--secondary-purple);
 }
 
 .book-information p {
-	color: var(--secondary-purple);
+    color: var(--secondary-purple);
 }
 
 button {
-	font-size: 18px;
-	padding: 8px 32px;
-	font-weight: bold;
-	border-radius: 24px;
-	color: white;
-	background-color: var(--secondary-purple-hover);
-	border: none;
+    font-size: 18px;
+    padding: 8px 32px;
+    font-weight: bold;
+    border-radius: 24px;
+    color: white;
+    background-color: var(--secondary-purple-hover);
+    border: none;
 }
 
 /* Footer */
 .footer-container {
-	background-color: rgb(180, 149, 245);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 100px;
-	gap: 18px;
-	font-size: 18px;
+    background-color: rgb(180, 149, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    gap: 18px;
+    font-size: 18px;
 }
 
 .nav-links {
-	display: flex;
-	gap: 18px;
+    display: flex;
+    gap: 18px;
 }
 
 .nav-links a {
-	text-decoration: none;
-	color: white;
-	padding: 0px 20px;
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
 }
 
 .nav-buttons {
-	display: flex;
-	justify-content: space-between;
-	width: 200px;
-	gap: 18px;
-	margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    gap: 18px;
+    margin: 10px 0px;
 }
 
 .footer-container p {
-	color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-container p a {
-	text-decoration: none;
-	color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 
 /* Author Page */
 #about-section {
-	padding: 24px;
-	margin: 18px auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    padding: 24px;
+    margin: 18px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: 18px;
-	gap: 18px;
-	max-width: 800px;
-	color: var(--secondary-purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    gap: 18px;
+    max-width: 800px;
+    color: var(--secondary-purple);
 }
 
 .about-container h1,
 .about-container p {
-	text-align: center;
+    text-align: center;
 }
 
 .about-container ul {
-	margin-top: 18px;
+    margin-top: 18px;
 }
 
 .about-container li {
-	margin: 8px 0px;
+    margin: 8px 0px;
 }
 
 /* Parents */
 #parent-section {
-	padding: 24px;
-	margin: 0px auto 64px auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    padding: 24px;
+    margin: 0px auto 64px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .parent-container {
-	display: flex;
-	flex-direction: column;
-	gap: 24px;
-	font-size: 18px;
-	line-height: 2;
-	margin: 0px auto;
-	max-width: 800px;
-	color: var(--secondary-purple);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 18px;
+    line-height: 2;
+    margin: 0px auto;
+    max-width: 800px;
+    color: var(--secondary-purple);
 }
 
 #last-ul {
-	margin-left: 48px;
+    margin-left: 48px;
 }
 
 .biblical-virtues b {
-	font-size: 24px;
+    font-size: 24px;
 }
 
 .biblical-virtues li {
-	font-size: 18px;
+    font-size: 18px;
 }
 
 /* Events */
 #events-section {
-	padding: 24px;
-	margin: 0px auto 64px auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    padding: 24px;
+    margin: 0px auto 64px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .events-section {
-	display: flex;
-	flex-direction: column;
-	gap: 24px;
-	font-size: 18px;
-	line-height: 2;
-	margin: 0px auto;
-	max-width: 800px;
-	color: var(--secondary-purple);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 18px;
+    line-height: 2;
+    margin: 0px auto;
+    max-width: 800px;
+    color: var(--secondary-purple);
 }
 
 /* Contact Me */
 #contact-me-section {
-	padding: 24px;
-	margin: 0px auto 64px auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    padding: 24px;
+    margin: 0px auto 64px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-me-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 24px;
-	font-size: 18px;
-	line-height: 2;
-	margin: 0px auto;
-	max-width: 800px;
-	color: var(--secondary-purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    font-size: 18px;
+    line-height: 2;
+    margin: 0px auto;
+    max-width: 800px;
+    color: var(--secondary-purple);
 }
 
 #chickens {
-	position: absolute;
-	z-index: 1;
-	top: -590px;
-	left: 750px;
+    position: absolute;
+    z-index: 1;
+    top: -580px;
+    left: 730px;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
-	header {
-		margin-bottom: 0px;
-	}
+    header {
+        margin-bottom: 0px;
+    }
 
-	.logo-container {
-		width: 600px;
-	}
+    .logo-container {
+        width: 600px;
+    }
 
-	.container {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-		top: 20px;
-		left: 200px;
-	}
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        top: 20px;
+        left: 200px;
+    }
 
-	#banner {
-		height: 300px;
-		object-fit: cover;
-	}
+    #banner {
+        height: 300px;
+        object-fit: cover;
+    }
 
-	#images {
-		width: 150px;
-	}
+    #images {
+        width: 150px;
+    }
 
-	#chickens {
-		top: -570px;
-		left: 200px;
-	}
+    #chickens {
+        display: none;
+    }
 
-	.author-container {
-		flex-direction: column;
-		gap: 24px;
-	}
+    .author-container {
+        flex-direction: column;
+        gap: 24px;
+    }
 
-	.book-container {
-		flex-direction: column;
-		gap: 24px;
-	}
+    .book-container {
+        flex-direction: column;
+        gap: 24px;
+    }
 
-	.about-container {
-		max-width: 600px;
-	}
+    .about-container {
+        max-width: 600px;
+    }
 
-	#parent-section {
-		max-width: 600px;
-	}
+    #parent-section {
+        max-width: 600px;
+    }
 
-	#contact-me {
-		margin: 100px 0px;
-	}
+    #contact-me {
+        margin: 100px 0px;
+    }
 
-	#events-section {
-		margin: 100px 0px;
-	}
+    #events-section {
+        margin: 100px 0px;
+    }
 
-	.book-section {
-		margin: 100px 0px;
-	}
+    .book-section {
+        margin: 100px 0px;
+    }
 
+}
+
+@media (max-width: 425px) {
+    .container h1 {
+        font-size: 36px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+
+    .logo-container {
+        width: 100%;
+    }
+
+    .hero {
+        margin-top: 100px;
+    }
+
+    .hero img {
+        width: 200px;
+    }
+
+    .bubble-container {
+        height: 200px;
+        width: 100px;
+    }
+
+    .bubble {
+        height: 100px;
+        width: 100px;
+    }
+
+    #chickens {
+        display: none;
+    }
+
+    #author-backsplash {
+        object-fit: cover;
+    }
+
+    .author-information {
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .book-section {
+        margin: 0px 0px 100px 0px;
+    }
+
+    .nav-links {
+        display: grid;
+        grid-template-columns: repeat(2, 100px);
+
+        a {
+            text-align: center;
+            padding: 0;
+        }
+    }
+
+    .nav-buttons {
+        width: 150px;
+    }
+
+    .footer-container {
+        p {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
+    #parent-section {
+        margin: 50px 25px 50px 25px;
+    }
+
+    .book-section {
+        margin-top: 50px;
+    }
+
+    #about-section {
+        margin: 50px 25px 50px 25px;
+    }
+
+    #events-section {
+        margin: 50px 25px 50px 25px;
+    }
 }
