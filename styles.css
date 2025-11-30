@@ -75,6 +75,7 @@ h6 {
     width: 100%;
     z-index: -1;
     padding-bottom: 250px;
+    padding-top: 300px;
 }
 
 /* Images */
@@ -86,21 +87,13 @@ h6 {
 
 /* Header */
 header {
-    transition: transform 0.3s ease, opacity 0.3s ease;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 200px;
-}
-
-header.fixed {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    transform: translateY(0);
-    opacity: 1;
+    z-index: 10;
 }
 
 .container {
@@ -143,7 +136,6 @@ header.fixed {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 50px 0px;
     padding: 24px;
 }
 
@@ -240,7 +232,20 @@ header.fixed {
 
 /* Book Information */
 .book-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+    gap: 4rem;
+}
+
+#book-section {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 4rem;
 }
 
 .book-container {
@@ -248,8 +253,8 @@ header.fixed {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px auto;
     padding: 24px;
+    gap: 15rem;
 }
 
 .book-container p {
@@ -277,6 +282,7 @@ header.fixed {
     justify-content: center;
     align-items: start;
     gap: 16px;
+    width: 600px;
 }
 
 .book-information h1 {
@@ -295,6 +301,17 @@ button {
     color: white;
     background-color: var(--secondary-purple-hover);
     border: none;
+}
+
+.placeholder {
+    height: 400px;
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 24px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Footer */
@@ -341,7 +358,7 @@ button {
 /* Author Page */
 #about-section {
     padding: 24px;
-    margin: 18px auto;
+    margin-top: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -374,7 +391,7 @@ button {
 /* Parents */
 #parent-section {
     padding: 24px;
-    margin: 0px auto 64px auto;
+    margin: 300px auto 64px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -406,7 +423,7 @@ button {
 /* Events */
 #events-section {
     padding: 24px;
-    margin: 0px auto 64px auto;
+    margin: 300px auto 64px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -455,6 +472,34 @@ button {
     margin-bottom: 170px;
 }
 
+#contact-me {
+    margin-top: 300px;
+}
+
+@media (max-width: 1024px) {
+    .logo-container {
+        width: 800px;
+    }
+
+    #banner {
+        height: 200px;
+    }
+
+    .author-container {
+        max-width: 800px;
+        gap: 8rem;
+    }
+
+    .book-container {
+        max-width: 800px;
+        gap: 8rem;
+    }
+
+    #chickens {
+        left: 500px;
+    }
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     header {
@@ -475,7 +520,7 @@ button {
     }
 
     #banner {
-        height: 300px;
+        height: 200px;
         object-fit: cover;
     }
 
@@ -524,6 +569,14 @@ button {
 }
 
 @media (max-width: 425px) {
+    #banner {
+        height: 175px;
+    }
+
+    .backsplash {
+        padding-top: 100px;
+    }
+
     .container h1 {
         font-size: 36px;
     }
@@ -605,7 +658,11 @@ button {
     }
 
     #parent-section {
-        margin: 50px 25px 50px 25px;
+        margin: 200px 25px 50px 25px;
+    }
+
+    #contact-me {
+        margin-top: 200px;
     }
 
     .book-section {
@@ -613,11 +670,15 @@ button {
     }
 
     #about-section {
-        margin: 50px 25px 50px 25px;
+        margin: 200px 25px 50px 25px;
     }
 
     #events-section {
-        margin: 50px 25px 50px 25px;
+        margin: 200px 25px 50px 25px;
+    }
+
+    #book-section {
+        margin: 200px 25px 50px 25px;
     }
 
     #spacer {
